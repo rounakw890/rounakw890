@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Bites | Delicious Food</title>
+    <style>
+        /* Basic CSS for layout */
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        header { background: #333; color: #fff; padding: 1rem 0; text-align: center; position: sticky; top: 0; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; }
+        
+        .hero { 
+            background: url('https://placeholder.com') no-repeat center center/cover;
+            height: 400px; color: white; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+        }
+        .hero h1 { font-size: 3.5rem; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        
+        .menu-section { padding: 2rem; text-align: center; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+        .food-item { border: 1px solid #ddd; padding: 10px; border-radius: 8px; transition: transform 0.3s; }
+        .food-item:hover { transform: scale(1.05); }
+        .food-item img { width: 100%; border-radius: 5px; }
+        
+        .btn { background: #ff5722; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Delicious Meals Delivered</h1>
+        <p>Fresh ingredients, amazing taste.</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Special Menu</h2>
+        <div class="menu-grid">
+            <div class="food-item">
+                <img src="https://placeholder.com" alt="Dish 1">
+                <h3>Classic Burger</h3>
+                <p>$12.00</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="food-item">
+                <img src="https://placeholder.com" alt="Dish 2">
+                <h3>Pepperoni Pizza</h3>
+                <p>$15.50</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="food-item">
+                <img src="https://placeholder.com" alt="Dish 3">
+                <h3>Fresh Salad</h3>
+                <p>$9.00</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
